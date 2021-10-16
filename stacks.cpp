@@ -9,7 +9,7 @@ private:
     int top;
 
 public:
-    Stack(int s)
+    Stack (int s)
     {
         size = s;
         top = -1;
@@ -53,11 +53,14 @@ public:
             return true;
         return false;
     }
+    int peek(){
+        return arr[top];
+    }
 };
 
 int main()
-{
-    Stack s(20);
+{ 
+    Stack  s(20);
     s.push(1);
     s.push(2);
     s.print();
